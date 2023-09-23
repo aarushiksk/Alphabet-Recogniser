@@ -4,9 +4,8 @@ import numpy as np
 import tensorflow as tf
 
 app = Flask(__name__)
-
 # Load your saved model
-model = tf.keras.models.load_model("C:\\Users\\aarus\\model_hand2.h5")
+model = tf.keras.models.load_model("C:\\Users\\aarus\\model_hand_i_made.h5")
 
 
 @app.route('/')
@@ -69,4 +68,4 @@ def predict():
         return jsonify({'error': 'An error occurred'})
 
 if __name__ == '__main__':
-  app.run()
+      app.run()
