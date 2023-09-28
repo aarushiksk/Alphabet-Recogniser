@@ -68,9 +68,6 @@ const canvas = document.getElementById('canvas');
 
                 });
         }
-
-
-
         function draw(e) {
             if (!drawing) return;
             ctx.lineWidth = 10;
