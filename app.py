@@ -5,7 +5,8 @@ import tensorflow as tf
 
 app = Flask(__name__)
 # Load your saved model
-model = tf.keras.models.load_model("C:\\Users\\aarus\\model_hand_i_made.h5")
+#{{ url_for('static', filename='css/index.css') }}
+model = tf.keras.models.load_model("C:\\Users\\aarus\\model_i_made.h5")
 
 
 @app.route('/')
