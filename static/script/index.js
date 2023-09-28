@@ -70,11 +70,15 @@ const canvas = document.getElementById('canvas');
         }
         function draw(e) {
             if (!drawing) return;
+            const rect = canvas.getBoundingClientRect(); // Get the canvas's position on the page
+            const x = e.clientX - rect.left; // Adjust the x-coordinate
+            const y = e.clientY - rect.top; // Adjust the y-coordinate
+        
             ctx.lineWidth = 10;
             ctx.lineCap = 'round';
             ctx.strokeStyle = 'white';
-            ctx.lineTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+            ctx.lineTo(x, y);
             ctx.stroke();
             ctx.beginPath();
-            ctx.moveTo(e.clientX - canvas.offsetLeft, e.clientY - canvas.offsetTop);
+            ctx.moveTo(x, y);
         }

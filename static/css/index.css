@@ -62,8 +62,8 @@ button:hover {
     width: 400px;
     border-radius: 2px;
     background-color: #f7f7f7;
-    border: 2px solid #000000; /* Border style */
-    margin-top: 30px; /* Adjust margin as needed */
+    
+    margin-top: 20px; /* Adjust margin as needed */
 
 
     
