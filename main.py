@@ -2,11 +2,13 @@ from flask import Flask, render_template, request, jsonify
 import cv2
 import numpy as np
 import tensorflow as tf
+import pickle
 
 app = Flask(__name__)
 # Load your saved model
 #{{ url_for('static', filename='css/index.css') }}
-model = tf.keras.models.load_model("C:\\Users\\aarus\\model_i_made.h5")
+model = tf.keras.models.load_model('model_i_made.h5')
+
 
 
 @app.route('/')
