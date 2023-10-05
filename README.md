@@ -9,7 +9,7 @@ this link to access the project: https://alphabet-recogniser.el.r.appspot.com
 # ☀️ Utilities of this project:
 1. This can be integrated on websites as a login/authentication method.
 2. It efficiently depicts how LeNet architecture works and can be implemneted.
-3. It can also be turned into a fun quiz website for kids to assisst them in drawing letters.
+3. It can also be turned into a fun quiz website for kids to assist them in drawing letters.
 <br></br>
 # 📷Glimpses into the project:
 <img width="653" alt="image" src="https://github.com/aarushiksk/Alphabet-Recogniser/assets/92772439/6567c079-1c87-4cdb-9863-b0a4f6dfe06c">
