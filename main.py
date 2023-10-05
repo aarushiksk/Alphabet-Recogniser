@@ -7,6 +7,7 @@ import pickle
 app = Flask(__name__)
 # Load your saved model
 #{{ url_for('static', filename='css/index.css') }}
+#{{ url_for('static', filename='script/index.js') }}
 model = tf.keras.models.load_model('model_i_made.h5')
 
 
