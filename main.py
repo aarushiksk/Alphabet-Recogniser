@@ -5,9 +5,7 @@ import tensorflow as tf
 import pickle
 
 app = Flask(__name__)
-# Load your saved model
-#{{ url_for('static', filename='css/index.css') }}
-#{{ url_for('static', filename='script/index.js') }}
+
 model = tf.keras.models.load_model('model_i_made.h5')
 
 
@@ -45,7 +43,7 @@ def predict():
           # Normalize the centered image
           normalized_image = centered_image / 255.0
         
-          # Make predictions using your model
+          # Make predictions using model
           predictions = model.predict(centered_image.reshape(1, 28, 28, 1))
         
           # Convert prediction to alphabet
@@ -57,7 +55,7 @@ def predict():
     # Save the alpha channel image as an image (optional)
           cv2.imwrite('received_image.png', centered_image)
 
-    # Return a response (e.g., confirmation message)
+    # Return a response
           return jsonify({'predicted_letter': predicted_alphabet})
            
      
@@ -67,7 +65,7 @@ def predict():
             return jsonify({'error': 'No pixel data received'})
 
     except Exception as e:
-        # Log any exceptions or errors that occur during processing
+        # Logging any exceptions or errors that occur during processing
         print(f'Error processing data: {str(e)}')
         return jsonify({'error': 'An error occurred'})
 
